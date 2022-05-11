@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Serif:wght@300&family=Roboto:wght@300&display=swap');
+
+
+.root{
+   --accent : #EA5252;
+   --accenthover : #F68787;
+   --dark80 : rgba(48,78,89,8,8);
+   --dark60 : rgba(48,78,89,8,8);
+   --light : #ffffff;
+   --transition : all 0.3s ease 0s;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+
+}
+html ,body{
+    height: 100%;
+    overflow: auto;
+
+}
+body{
+    background: linear-gradient(rgba(37, 37, 37, 0.479)
+    ,#36363669),url("./IMAGE/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+a,button,p{
+    font-family: "Roboto" , sans-serif;
+    color: #ffffff
+}
+a.button,logo{
+    cursor: pointer;
+}
+main{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(60px,1fr) repeat(6,minmax(50px,190px)) minmax(60px,1fr);
+}
+header{
+    grid-column: 2 / span 6;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.Links{
+    margin-left: auto;
+
+}
+.Links a , .Links button{
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+.Links a{
+    margin-right: 50px;
+}
+.Links a:hover{
+    color: #F68787;
+    transition: 0.5s;
+}
+.button_med{
+    border: none;
+    background-color: #EA5252;
+    padding: 8px 25px;
+    transition: 0.5s;
+
+}
+.button_med:hover{
+    color: #F68787;
+    transition: 0.5s;
+}
+.info{
+    grid-column: 2 /span 4;
+}
+.Lifestyle_font{
+    font-family: "Roboto";
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 3.775rem;
+}
+.icons{
+    display: flex;
+    margin-top: 55;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon_info{
+    margin: 0 80px 0 10px;
+}
+.icon_top{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+}
+.icon_bottom{
+    font-weight: 700;
+    font-size: 1.55rem;
+    margin-bottom: 10px;
+
+}
+.features{
+    grid-column: 2 / span 7 ;
+    background-color: rgba(37, 37, 37, 0.479);
+    padding: 20px 0 0 40px;
+    display: flex;
+    align-items: center;
+}
+.feature{
+    display: flex;
+    margin: 0 60px 40px 0;
+}
+.feature:nth-child(3){
+    margin-top: 20px;
+    align-self: flex-start;
+}
+.feature img{
+    height: 100%;
+    margin-right: 20px;
+}
+.feature_top{
+    margin-top: 20px;
+}
+.feature_top , .future_LM{
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.feature_bottom{
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.future_LM{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.future_LM:hover{
+    color: #F68787
+}
+@media only screen and(max-width:1100px){
+    .icon img{
+        height: 55px;
+        width: auto;
+    }
+    .icon_top{
+        font-size: 1rem;
+    }
+    .icon_bottom{
+        font-size: 1.125rem;
+    }
+    .Lifestyle_font{
+        font-size: 2.75rem;
+    }
+    
+}
